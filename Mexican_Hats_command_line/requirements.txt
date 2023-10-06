@@ -1,0 +1,6 @@
+numpy==1.24.3
+imageio==2.31.1
+"napari[all]"
+scipy==1.11.2
+Pillow==9.4.0
+tqdm==4.65.0
