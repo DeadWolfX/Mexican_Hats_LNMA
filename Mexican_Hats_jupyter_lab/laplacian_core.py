@@ -152,11 +152,14 @@ def hdaf(n, c_nk, x):
     Returns:
         val matrix.
     """     
+    old_settings = np.seterr(all='ignore')
     x = x * (c_nk ** 2)
     fac=[mp.mpf(math.factorial(x)) for x in np.arange(n, -1, -1)]
     fac = 1.0 / np.array(fac, dtype=np.float128)
     en = np.polyval(fac, x)
     val = en * np.exp(-x)
+    val[np.isnan(val)] = 0
+    np.seterr(**old_settings)
     return val
 
 
