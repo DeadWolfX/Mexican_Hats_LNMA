@@ -60,8 +60,9 @@ method = 'Frangi'</p><br>
 <p>If you are excecuting the code outside the Mexican_Hats_command_line  directory you need to execute:</p>
 
 ```bash
-python3 /path/analysis_image.py path/image_name.tif 5 3 1 1 bicubic laplacian 1 100 Frangi
+python3 /path/analysis_image.py path/image_name.tif 5 3 1 1 bicubic laplacian 1 100 Frangi ```
 
-If you are excecuting the code inside the Mexican_Hats_command_line  directory you need to execute:<br>
+<p>If you are excecuting the code inside the Mexican_Hats_command_line  directory you need to execute:</p>
 
+```bash
 python3 analysis_image.py image_name.tif 5 3 1 1 bicubic laplacian 1 100 Frangi</p><br>
